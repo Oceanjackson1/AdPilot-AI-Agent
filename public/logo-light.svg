@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#F0F0F2"/>
+  <circle cx="50" cy="50" r="48" stroke="url(#border-light)" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="border-light" x1="0" y1="0" x2="100" y2="100">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="birdGradLight" x1="0" y1="0" x2="100" y2="80">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="60%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(15, 22) scale(0.7)">
+    <path d="M50 70 C30 70 15 55 15 40 C15 25 30 15 45 15 C50 15 55 18 58 22" stroke="url(#birdGradLight)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M45 35 C55 20 75 15 95 25 C80 28 68 35 60 45" stroke="url(#birdGradLight)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M20 55 C5 50 -5 40 0 30" stroke="url(#birdGradLight)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="52" cy="25" r="3" fill="#6366F1"/>
+    <path d="M58 22 L68 20 L60 27" stroke="url(#birdGradLight)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

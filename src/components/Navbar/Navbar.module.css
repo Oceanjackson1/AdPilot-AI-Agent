@@ -1,0 +1,107 @@
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-xl);
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all var(--duration-normal) var(--ease-out);
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: -0.02em;
+}
+
+.logoIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    transition: all var(--duration-normal);
+}
+
+.logoIcon:hover {
+    transform: scale(1.05);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.navLink {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-tertiary);
+    transition: color var(--duration-fast) var(--ease-out);
+    cursor: pointer;
+}
+
+.navLink:hover {
+    color: var(--color-text-primary);
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.navBtnSecondary {
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: transparent;
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.navBtnSecondary:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    color: var(--color-text-primary);
+    background: rgba(99, 102, 241, 0.06);
+}
+
+.navBtnPrimary {
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #6366F1, #4F46E5);
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.navUserName {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.navBtnPrimary:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+}
