@@ -2,6 +2,15 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse } from 'next/server';
 
 export async function middleware(request) {
+    const { pathname, searchParams } = request.nextUrl;
+
+    // If an OAuth code lands on a page other than /auth/callback, redirect it there
+    if (pathname !== '/auth/callback' && searchParams.has('code') && !searchParams.has('next')) {
+        const url = request.nextUrl.clone();
+        url.pathname = '/auth/callback';
+        return NextResponse.redirect(url);
+    }
+
     let supabaseResponse = NextResponse.next({ request });
 
     const supabase = createServerClient(

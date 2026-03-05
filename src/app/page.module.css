@@ -783,8 +783,8 @@
   max-width: var(--content-max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: var(--space-3xl);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-2xl);
   padding-bottom: var(--space-2xl);
   margin-bottom: var(--space-xl);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
@@ -812,7 +812,30 @@
   font-size: var(--text-sm);
   color: var(--color-text-tertiary);
   line-height: 1.6;
-  max-width: 300px;
+  max-width: 320px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.footerSocialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-tertiary);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.footerSocialLink:hover {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818CF8;
 }
 
 .footerColumn {
@@ -902,8 +925,12 @@
   }
 
   .footerMain {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
+  }
+
+  .footerBrand {
+    grid-column: 1 / -1;
   }
 
   .footerBottom {

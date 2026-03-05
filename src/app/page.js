@@ -145,27 +145,27 @@ export default function Home() {
         <div className={styles.heroContent}>
           <div className={styles.heroTag}>
             <span className={styles.heroTagDot}></span>
-            AI-Powered Ad Optimization
+            AI Agent for Ad Optimization
           </div>
 
           <h1 className={styles.heroTitle}>
             <span className={styles.heroTitleGlow}>AdPilot</span>
             <span className={styles.heroTitleDynamic}>
-              让广告投放{' '}
+              你的广告投放{' '}
               <span className={styles.heroWordCarousel}>
                 <span className={styles.heroWordTrack}>
-                  <span className={styles.heroWord}>更精准</span>
-                  <span className={styles.heroWord}>更高效</span>
-                  <span className={styles.heroWord}>更智能</span>
+                  <span className={styles.heroWord}>AI Agent</span>
+                  <span className={styles.heroWord}>分析搭档</span>
+                  <span className={styles.heroWord}>决策引擎</span>
                 </span>
               </span>
             </span>
           </h1>
 
           <p className={styles.heroSubtitle}>
-            将广告优化分析师的完整工作流浓缩为一次 AI 对话。
+            首个专为广告优化师打造的 AI Agent。
             <br />
-            上传投放报表，自动完成数据诊断、归因分析与策略输出。
+            上传报表，Agent 自主完成诊断、归因与策略输出。
           </p>
 
           <div className={styles.heroCtas}>
@@ -200,20 +200,20 @@ export default function Home() {
       <section className={styles.workflow} id="workflow">
         <div className={styles.sectionGlow}></div>
         <div className={`${styles.sectionHeader} ${styles.revealLeft}`}>
-          <div className={styles.sectionTag}>工作流</div>
-          <h2 className={styles.sectionTitle}>还原广告优化师的分析路径</h2>
+          <div className={styles.sectionTag}>Agent 工作流</div>
+          <h2 className={styles.sectionTitle}>像资深优化师一样思考和行动</h2>
           <p className={styles.sectionSubtitle}>
-            AdPilot 模拟资深优化师的思维方式，从数据清洗到策略输出，每一步都有据可依
+            AdPilot Agent 自主拆解分析任务，从数据清洗到策略输出，全程无需人工干预
           </p>
         </div>
 
         <div className={styles.workflowTimeline}>
           <div className={styles.workflowLine}></div>
           {[
-            { num: '01', title: '数据接入与清洗', desc: '上传各广告平台导出的投放报表（Excel / CSV），AI 自动识别字段语义、清洗异常值、统一数据口径', tags: ['字段自动映射', '异常值检测', '多平台数据统一'] },
-            { num: '02', title: '效果诊断与归因', desc: 'AI 从花费、曝光、点击、转化全链路分析投放数据，定位低效计划、异常波动和成本拐点', tags: ['漏斗分析', '趋势拐点检测', 'ROI / ROAS 归因'] },
-            { num: '03', title: '人群与素材洞察', desc: '交叉分析受众画像与素材表现，发现高价值人群组合，识别素材疲劳和创意衰退信号', tags: ['人群交叉分析', '素材效果排名', '创意疲劳预警'] },
-            { num: '04', title: '预算分配与策略建议', desc: '基于分析结论输出可执行的优化策略：预算再分配方案、出价调整建议、定向优化方向和素材迭代建议', tags: ['预算优化方案', '出价策略调整', '可执行 Action List'] },
+            { num: '01', title: '数据接入与理解', desc: 'Agent 自动解析上传的投放报表（Excel / CSV），识别字段语义、清洗异常值、统一多平台数据口径——无需任何人工配置', tags: ['字段自动映射', '异常值检测', '多平台数据统一'] },
+            { num: '02', title: '自主诊断与归因', desc: 'Agent 从花费、曝光、点击、转化全链路拆解数据，自主定位低效计划、异常波动和成本拐点', tags: ['漏斗分析', '趋势拐点检测', 'ROI / ROAS 归因'] },
+            { num: '03', title: '深度洞察挖掘', desc: 'Agent 交叉分析受众画像与素材表现，主动发现高价值人群组合，预警素材疲劳和创意衰退信号', tags: ['人群交叉分析', '素材效果排名', '创意疲劳预警'] },
+            { num: '04', title: '策略生成与输出', desc: 'Agent 基于全局分析自主生成可执行策略：预算再分配方案、出价调整建议、定向优化方向与素材迭代计划', tags: ['预算优化方案', '出价策略调整', '可执行 Action List'] },
           ].map((step, i) => (
             <div className={`${styles.workflowStep} ${styles.reveal}`} key={step.num} style={{ '--delay': `${i * 0.12}s` }}>
               <div className={styles.workflowStepNum}>{step.num}</div>
@@ -235,10 +235,10 @@ export default function Home() {
       <section className={styles.features} id="features">
         <div className={styles.sectionGlow}></div>
         <div className={`${styles.sectionHeader} ${styles.revealLeft}`}>
-          <div className={styles.sectionTag}>核心能力</div>
-          <h2 className={styles.sectionTitle}>为广告优化而生</h2>
+          <div className={styles.sectionTag}>Agent 能力</div>
+          <h2 className={styles.sectionTitle}>不只是工具，而是你的 AI 搭档</h2>
           <p className={styles.sectionSubtitle}>
-            不只是数据可视化，而是真正理解广告投放逻辑的 AI 分析伙伴
+            AdPilot Agent 真正理解广告投放逻辑，自主分析、自主决策、自主输出
           </p>
         </div>
 
@@ -279,7 +279,7 @@ export default function Home() {
           <div className={styles.sectionTag}>平台支持</div>
           <h2 className={styles.sectionTitle}>覆盖主流广告平台</h2>
           <p className={styles.sectionSubtitle}>
-            支持多平台投放数据的统一分析，识别跨平台效果差异
+            Agent 支持多平台投放数据的统一接入与跨平台效果对比分析
           </p>
         </div>
 
@@ -306,9 +306,9 @@ export default function Home() {
           <div className={`${styles.ctaBorderLine} ${styles.ctaBorderLineBottom}`}></div>
           <div className={styles.ctaGlow}></div>
           <div className={styles.ctaGlow2}></div>
-          <h2 className={styles.ctaTitle}>用 AI 重新定义广告优化的效率</h2>
+          <h2 className={styles.ctaTitle}>让 AI Agent 接管你的广告分析工作</h2>
           <p className={styles.ctaDesc}>
-            上传一份投放报表，体验 30 秒内获得专业级分析报告
+            上传一份投放报表，Agent 30 秒内自主完成诊断并输出优化策略
           </p>
           <Link href="/chat">
             <button className={styles.ctaBtn}>
@@ -330,20 +330,37 @@ export default function Home() {
               <span className={styles.footerLogo}>AdPilot</span>
             </div>
             <p className={styles.footerBrandDesc}>
-              基于 AI 的广告投放优化平台，帮助营销团队用数据驱动决策，提升每一分广告预算的回报。
+              首个专为广告优化师打造的 AI Agent 平台。上传投放报表，Agent 自主完成数据诊断、归因分析与策略输出，让每一分广告预算都花在刀刃上。
             </p>
+            <div className={styles.footerSocials}>
+              <a href="https://github.com/Oceanjackson1/AdPilot-AI-Agent" target="_blank" rel="noopener noreferrer" className={styles.footerSocialLink} aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="mailto:contact@adpilot.ai" className={styles.footerSocialLink} aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
           </div>
           <div className={styles.footerColumn}>
             <div className={styles.footerColumnTitle}>产品</div>
-            <Link href="/chat" className={styles.footerLink}>开始分析</Link>
-            <a href="#workflow" className={styles.footerLink}>工作流</a>
-            <a href="#features" className={styles.footerLink}>核心功能</a>
+            <Link href="/chat" className={styles.footerLink}>AI Agent 工作台</Link>
+            <a href="#workflow" className={styles.footerLink}>Agent 工作流</a>
+            <a href="#features" className={styles.footerLink}>核心能力</a>
+            <a href="#" className={styles.footerLink}>API 文档</a>
           </div>
           <div className={styles.footerColumn}>
-            <div className={styles.footerColumnTitle}>支持</div>
+            <div className={styles.footerColumnTitle}>资源</div>
             <a href="#" className={styles.footerLink}>使用文档</a>
             <a href="#" className={styles.footerLink}>常见问题</a>
-            <a href="#" className={styles.footerLink}>联系我们</a>
+            <a href="#" className={styles.footerLink}>更新日志</a>
+            <a href="#" className={styles.footerLink}>系统状态</a>
+          </div>
+          <div className={styles.footerColumn}>
+            <div className={styles.footerColumnTitle}>公司</div>
+            <a href="#" className={styles.footerLink}>关于我们</a>
+            <a href="mailto:contact@adpilot.ai" className={styles.footerLink}>联系我们</a>
+            <a href="#" className={styles.footerLink}>加入团队</a>
+            <a href="#" className={styles.footerLink}>合作伙伴</a>
           </div>
         </div>
         <div className={styles.footerBottom}>
@@ -351,6 +368,7 @@ export default function Home() {
           <div className={styles.footerBottomLinks}>
             <a href="#" className={styles.footerLink}>隐私政策</a>
             <a href="#" className={styles.footerLink}>使用条款</a>
+            <a href="#" className={styles.footerLink}>数据安全</a>
           </div>
         </div>
       </footer>
