@@ -101,14 +101,14 @@
 
 /* ---- Chat page uses light theme ---- */
 .chatThemeLight {
-  --color-bg: #F5F5F7;
+  --color-bg: #FFFFFF;
   --color-bg-white: #FFFFFF;
   --color-bg-card: #FFFFFF;
-  --color-bg-subtle: #F0F0F2;
+  --color-bg-subtle: rgba(0, 0, 0, 0.04);
   --color-bg-input: #FFFFFF;
 
   --color-text-primary: #1D1D1F;
-  --color-text-secondary: #6E6E73;
+  --color-text-secondary: #3A3A3C;
   --color-text-tertiary: #86868B;
   --color-text-inverse: #FFFFFF;
 
@@ -222,6 +222,7 @@ img {
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -229,17 +230,25 @@ img {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeft {
@@ -247,6 +256,7 @@ img {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -258,6 +268,7 @@ img {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -265,13 +276,25 @@ img {
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 @keyframes scaleIn {
@@ -279,6 +302,7 @@ img {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -286,34 +310,65 @@ img {
 }
 
 @keyframes glowPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.6;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @keyframes gradientRotate {
-  0% { --gradient-angle: 0deg; }
-  100% { --gradient-angle: 360deg; }
+  0% {
+    --gradient-angle: 0deg;
+  }
+
+  100% {
+    --gradient-angle: 360deg;
+  }
 }
 
 @keyframes floatSlow {
-  0%, 100% { transform: translateY(0) translateX(0); }
-  25% { transform: translateY(-8px) translateX(4px); }
-  50% { transform: translateY(-4px) translateX(-4px); }
-  75% { transform: translateY(-12px) translateX(2px); }
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+
+  25% {
+    transform: translateY(-8px) translateX(4px);
+  }
+
+  50% {
+    transform: translateY(-4px) translateX(-4px);
+  }
+
+  75% {
+    transform: translateY(-12px) translateX(2px);
+  }
 }
 
 @keyframes marqueeLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes marqueeRight {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .animate-fade-in-up {
